@@ -75,10 +75,51 @@
         .supported-websites svg:hover {
             fill: #0077cc;
         }
+
+        footer {
+        background-color: #1a1a1a; /* Dark footer background */
+        color: #ffffff; /* White text color */
+        text-align: center;
+        padding: 15px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .footer-container p {
+        margin: 0;
+        font-size: 14px;
+        color: #cccccc; /* Lighter gray for the text */
+    }
+    .footer-container p:hover {
+        color: #00aaff; /* Highlight effect on hover */
+    }
+    header {
+        background-color: #1a1a1a; /* Dark background for the header */
+        color: #ffffff; /* White text */
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .header-container h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #00aaff; /* Highlight color for website name */
+    }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.9/iframeResizer.min.js"></script>
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <h1>V2Mate</h1>
+        </div>
+    </header>
     <div class="container">
         <h1>Video Downloader</h1>
         <p style="color: gray;">Download YouTube videos in seconds with this free and easy-to-use tool. Just enter the URL of the video you want to download and click "Download". That's it!
@@ -121,6 +162,11 @@
             </svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img"><title>Twitch</title><path d="M4.2 2L1 6v15.6h6.2V22h3.6l2.4-2.4h4.8L23 15.6V2H4.2zm0 2.4h16.8v10.8l-2.4 2.4h-5.2L11.2 20H9.6v-2.4H4.2V4.4zm9.6 2.4v6h2.4v-6h-2.4zm-6 0v6h2.4v-6H7.8z" /></svg>
     </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Homen. All rights reserved.</p>
+        </div>
+    </footer>
     
     <script>
 
